@@ -1,17 +1,17 @@
 
 *{
-margin:0;
-padding: 0;
-font-family: 'Open Sans', sans-serif;
+  margin:0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .Contenedor {
-border: solid 1px black; 
-width: 100%;
-max-width: 1000px;
-margin:auto;
-box-sizzing: border-box;
-overflow:hidden;
+ border: solid 1px black; 
+ width: 100%;
+ max-width: 1000px;
+ margin:auto;
+ box-sizzing: border-box;
+ overflow:hidden;
 }
 
 
@@ -23,19 +23,19 @@ overflow:hidden;
 }
 
 .Cabecera figure {
-width: 130px;
-margin:auto;
+ width: 130px;
+ margin: auto;
 }
-  
+
 .Cabecera img {
-width:130px; 
-height: 100px;
+ width:130px; 
+ height: 100px;
 }
 
 .cabecera_h1 {
-position:absolute;
-top: 40px;
-left:150px;
+ position:absolute;
+ top: 40px;
+ left:150px;
 }
 
 .cabecera_frase {
@@ -47,7 +47,7 @@ left:150px;
 .nav {
 margin: 10px 10px 0 0;
 position:unset;
-background:none;
+bacground:none;
 height: auto;
 width: unset;
 border:none;  
@@ -55,21 +55,21 @@ border:none;
 
 .nav_link {
  background: #008899;
- color:green;
+ color:white;
  padding:5px;
- border-radius:7px;
+ border-radius:3px;
 }
 
 .nav_link_palote {
  background: #008899;
- color:green;
+ color:white;
  padding:5px;
- border-radius:6px;
+ border-radius:3px;
 }
 
-.nav_link_Button {
+.nav_link_button {
  background: #008899;
- color:green;
+ color:white;
  padding:5px;
  border-radius:3px;
 }
@@ -87,7 +87,7 @@ border:none;
 .galeria_lienzo {
   width: 600px;
   height: 350px;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 .galeria_contenedor {
@@ -120,91 +120,111 @@ border:none;
  top: -26px;
 }
 
-label {
+
+label{
  margin:5px;
  width: 20px;
  height: 20px;
  border-radius: 100px;
  background:green;
- display: block;
+ display:block;
  cursor: pointer;
 }
 
-/************************/
-.tienda{
- display: grid;
- grid-template: repeat(3,300px) / repeat(3,300px);
- justify-content:center;
- grip-gap:26px;
- width: 100%;
- height: auto;  
- 
-  
-}
-.tienda article { 
-  display:flex;
+/*****************************************/
+.tienda {
+  display:grid;
+  grid-template: repeat(3,300px) / repeat(3, 300px);
   justify-content:center;
-  align-content:space-between;
-  flex-flow:wrap;
-  border: solid;
-  border-radius:15px;
-  overflow: hidden;
-  
+  grid-gap:16px;
+  width:100%;
+  height:auto;
+}
+
+
+.tienda article {
+ display:flex; 
+ justify-content: center;
+ align-content: space-between;
+ flex-flow:wrap;
+ border:solid;
+ border-radius: 15px;
+ overflow: hidden;
+ 
+
 }
 
 .tienda img {
-  position:relative;
-  top:5px;
-  width:150px;
-  height:100px;
-  border-radius:15px;
+ position:relative;
+ top: 5px;
+ width:150px;
+ height: 100px;
+ border-radius: 15px;
 }
 
 .tienda div {
-  width:100%;
-  height:50px;
-  background:#0088899;
+ width: 100%;
+ height: 50px;
+ background: #008899;
+}
+  
+.tienda p {
+ text-align: justify; 
+ padding:10px;
 }
 
-.tienda p {
-  text-align:justify;
-  padding:10px;
-  
-}
 
 .tienda h3 {
-  tex-align: justify;
-}
-  
-  /************************/
-  .espacio{
-   position:relative;
-    height:20px;
-  }
-  
-  .PiePagina {
-    display:flex;
-    justify-content:center;
-    position:center;
-    height:105px;
-    background:#008899;
-    align-content:center;
-  }
-.PiePagina footer {
-  
-  text-align:center;
-  color: white;
-  
-  }
-  
-  //******MODO RESPONSIVE*/
- @media screen and (max-width:600px) {
-   .tienda{
-     grid-template: repeat(1, 300px) / repeat(1, 300 px);
-   }
+  text-align: justify;  
 }
 
-      
+.btn_municipios {
+  background: #188B37;
+  color: #fff;
+  margin: auto;
+  padding: 19px 40px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.btn_municipios: active {
+  transform: scale(1.05);
+}
+
+  
+/*************************/
+
+.espacio {
+ position:relative;
+ height:20px;
+}
+
+.PiePagina {
+ display:flex;
+ justify-content: center;
+ position: relative;
+ height: 105px;
+ background: #008899;
+ align-content: center;
+}
+
+.PiePagina footer {
+ 
+  text-align:center;
+  color:white;
+  
+}
+
+//******MODO RESPONSIVE */
+  
+@media screen and  (max-width:600px) {
+         .tienda{
+              grid-template: repeat(1,300px) / repeat(1, 300px);         
+  }
+  
+}
+  
+
 
 
   
